@@ -26,7 +26,8 @@ $constants = array(
     "USERNAME" => "",
     "PASSWORD" => "",
     "PORT" => 465,
-    "SET_FROM" => ""
+    "SET_FROM" => "",
+    "DEBUG_MODE" => true, // should be false in production
 );
 
 if (isset($_POST["mail_input"])) {
@@ -41,7 +42,7 @@ if (isset($_POST["mail_input"])) {
             /*
                 Server settings.
              */
-            $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+            $mail->SMTPDebug  = SMTP::DEBUG_SERVER;
             $mail->isSMTP();
             $mail->Host       = $constants["HOST"];
             $mail->SMTPAuth   = true;
@@ -50,10 +51,7 @@ if (isset($_POST["mail_input"])) {
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port       = $constants["PORT"];
             $mail->SMTPSecure = 'ssl';
-            /*
-            Should be turned on in production.
-            */
-            // $mail->SMTPDebug  = false;
+            $mail->SMTPDebug  = $constants["DEBUG_MODE"];
             /*
                 Email recipents.
              */
