@@ -1,0 +1,27 @@
+.header {
+  padding: 20px;
+  box-sizing: content-box;
+}
+
+.header--brand {
+  width: 250px;
+  padding: 5px;
+}
+
+.header--right {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+
+.icons-list div img {
+  width: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.2s all ease;
+  will-change: opacity;
+  -webkit-transition: 0.2s all ease;
+  -moz-transition: 0.2s all ease;
+
+  &:hover { opacity: 0.2; }
+}

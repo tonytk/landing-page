@@ -1,0 +1,79 @@
+.section--first {
+  background-image: url("../img/orange-bg.png");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 82%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 82%);
+}
+
+.section--second { height: 80vh; }
+
+.section--third { background: #8C1AFF; }
+
+.header--logo { width: 200px; }
+
+.has-padding-medium {
+  padding: 6em;
+  padding-top: 20px;
+}
+
+.nested-section--third {
+  background: #7014cc;
+  border-radius: 30px;
+  height: 100%;
+  max-width: 1200px;
+  display: block;
+  margin: 0px auto;
+  box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+}
+
+.nested-section--last-second,
+.nested-section--last {
+  height: 100%;
+  max-width: 1200px;
+  display: block;
+  margin: 0px auto;
+}
+/*
+  Containers and footer styles
+ */
+.co-container {
+  box-sizing: content-box;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+
+  &::before {
+    content: "";
+    display: table;
+  }
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  .co-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+footer {
+  padding: 2em;
+  background: #2B2B2B;
+}
+
+.is-mailling-list- {
+
+}

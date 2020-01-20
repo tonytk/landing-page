@@ -3,30 +3,35 @@
     <head>
         <meta charset="utf-8" />
         <title>Codidact - Helping each other learn.</title>
-        <meta
-            name="description"
-            content="Codidact is an open-source, community-controlled Q&amp;A platform. Currently under active development. Contribute by joining our team."
-        />
+        <meta name="description" content="Codidact is an open-source, community-controlled Q&amp;A platform. Currently under active development. Contribute by joining our team." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+        <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
         <link rel="manifest" href="site.webmanifest" />
         <link rel="apple-touch-icon" href="icon.png" />
+        <link rel="stylesheet" href="assets/css/font-face.css" />
+        <link rel="stylesheet" href="assets/css/main.css" />
 
-        <link rel="stylesheet" href="assets/css/normalize.css" />
-        <link rel="stylesheet" href="assets/css/primary.css" />
+        <script type="text/javascript" src="assets/js/main.js" defer></script>
 
         <!-- Matomo -->
         <script type="text/javascript">
             var _paq = window._paq || [];
             /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-            _paq.push(['trackPageView']);
-            _paq.push(['enableLinkTracking']);
+            _paq.push(["trackPageView"]);
+            _paq.push(["enableLinkTracking"]);
             (function() {
-            var u="//analytics.codidact.org/";
-            _paq.push(['setTrackerUrl', u+'matomo.php']);
-            _paq.push(['setSiteId', '2']);
-            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+                var u = "//analytics.codidact.org/";
+                _paq.push(["setTrackerUrl", u + "matomo.php"]);
+                _paq.push(["setSiteId", "2"]);
+                var d = document,
+                    g = d.createElement("script"),
+                    s = d.getElementsByTagName("script")[0];
+                g.type = "text/javascript";
+                g.async = true;
+                g.defer = true;
+                g.src = u + "matomo.js";
+                s.parentNode.insertBefore(g, s);
             })();
         </script>
         <!-- End Matomo Code -->
@@ -34,36 +39,187 @@
 
     <body>
         <!--[if IE]>
-            <p class="browserupgrade">
-                You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to
-                improve your experience and security.
-            </p>
+        <p class="browserupgrade">
+            You are using an <strong>outdated</strong> browser. Please
+            <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
+        </p>
         <![endif]-->
-
-        <div class="container-centered">
-            <h1 class="heading-big">Codidact</h1>
-            <h2 class="subtitle">
-                A community-controlled, open-source Q&amp;A platform.
-            </h2>
-            <h2 class="subtitle">Work in progress.</h2>
-            <h3 class="heading-small">Contribute</h3>
-            <p class="subtitle">Use these platforms to communicate/contribute with us.</p>
-            <div class="logos">
-                <a href="https://github.com/codidact" class="btn-link" title="GitHub">
-                    <img src="assets/img/3rd-party/logo-github.png" alt="GitHub logo" />
-                </a>
-                <a href="https://discord.gg/WZ7aTst" class="btn-link" title="Discord (chat)">
-                    <img src="assets/img/3rd-party/logo-discord-chat.png" alt="Discord logo" />
-                </a>
-                <a href="https://forum.codidact.org/" class="btn-link" title="Discourse (forum)">
-                    <img src="assets/img/3rd-party/logo-discourse.png" alt="Discourse logo" />
-                </a>
-                <a href="https://github.com/codidact/docs/wiki" class="btn-link" title="Wiki">
-                    <img src="assets/img/3rd-party/logo-wiki.png" alt="Wiki logo" />
-                </a>
-            </div><br/>
-
-            <script src="https://gist.github.com/ArtOfCode-/b6088cc5ad9c98d4dfa9f16e234a1f85.js"></script>
-        </div>
+        <header class="header">
+            <div class="header--container">
+                <div class="header--brand">
+                    <a class="header--site-name" href=""><img src="assets/img/codidact-logo.svg" class="header--logo" alt="Codidact logo" width="170" /></a>
+                </div>
+                <div class="header--right">
+                    <div class="is-flex icons-list">
+                        <div><a href="https://forum.codidact.org/"><img src="assets/img/discourse-logo.svg"></a></div>
+                        <div><a href="https://github.com/codidact"><img src="assets/img/github-logo.png"></a></div>
+                        <div><a href="https://discord.gg/7jf8UzS"><img src="assets/img/discord-logo-blue.svg"></a></div>
+                        <div><a href="https://github.com/codidact/docs/wiki"><img src="assets/img/wiki-logo.png"></a></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="co-container">
+            <section class="section--first">
+                <div class="has-padding-medium has-bottom-margin">
+                    <div>
+                        <h1 class="has-large-font-size centered--short has-white-color">
+                            The Open <br /> Source Q&A <br />
+                            Platform.
+                        </h1>
+                        <h1 class="has-medium-font-size centered--short has-medium-thickness has-white-color">
+                            For the community. <br />
+                            By the community
+                        </h1>
+                    </div>
+                </div>
+            </section>
+            <div class="right-image-icon">
+                <img class="is-medium-width icon-wide" src="assets/img/icon-big.svg">
+            </div>
+            <section class="section--second">
+                <div class="has-padding-medium is-flex-center">
+                    <div class="div-section--left">
+                        <h1 class="has-medium-large-font-size has-large-font-size has-blue-color">
+                            What is Codidact?
+                        </h1>
+                        <p class="has-small-thickness has-top-margin has-small-font-size has-black-color">
+                            <b>Ever had a question? Ever had an answer? </b>
+                            We believe asking and answering questions makes the world a better place. We also believe that Q&A communities should be free from the politics and shenanigans of private, profit-focused companies.
+                        </p>
+                    </div>
+                    <div class="has-top-margin">
+                        <img class="pitch--image has-left-margin" src="assets/img/pitch.svg">
+                    </div>
+                </div>
+            </section>
+            <section class="section--third">
+                <div class="has-padding-medium is-flex-center">
+                    <div>
+                        <img class="pitch--image-idea has-right-margin" src="assets/img/idea.svg">
+                    </div>
+                    <div class="div-section--right has-top-margin has-left-large-margin">
+                        <h1 class="has-medium-large-font-size has-large-font-size has-white-color">
+                            Community First
+                        </h1>
+                        <p class="has-small-thickness has-top-margin has-small-font-size has-white-color">
+                            Our goal is to build an open-source platform for community-driven Q&A sites. Our aim is to keep it accessible for beginners and newcomers to the community while optimized for long-time users, focusing around the answer. We'll fund it by seeking donations, not by paywalls, and work with individual communities that want to join us.
+                        </p>
+                    </div>
+                </div>
+                <section class="nested-section--third">
+                    <div class="top-icon-container">
+                        <img src="assets/img/searching.svg">
+                    </div>
+                    <div class="is-flex has-bottom-margin">
+                        <p class="has-limited-width has-white-color has-small-font-size">
+                            Ultimately, we are all looking for answers to lifes big - and little questions. We want to build an amazing Q&A platform that makes it easier to ask and curate questions in a non-hostile environment and get to the answers you need, without the fuss.
+                            <br />
+                            <br />
+                            <b> Whether it’s a question about Python or pythons, we want Codidact to have you covered. </b>
+                        </p>
+                    </div>
+                </section>
+                <section class="nested-section--last-second">
+                    <p class="is-centered--text has-medium-large-font-size has-top-margin has-white-color">
+                        Get involved
+                    </p>
+                    <div class="flex--grid has-top-large-margin">
+                        <div class="flex--grid--cell" data-link="github">
+                            <a href="https://github.com/codidact">
+                                <div class="is-card">
+                                    <div class="card-image-top">
+                                        <img src="assets/img/GitHub_Logo_White.png" class="github-logo">
+                                    </div>
+                                    <div class="card-content">
+                                        <h1 class="card-content--heading">
+                                            Github
+                                        </h1>
+                                        <p class="card-content--content">
+                                            All of Codidact's source code is open source and is being hosted on GitHub. Pull requests and issues are encouraged!
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex--grid--cell" data-link="wiki">
+                            <a href="https://github.com/codidact/docs/wiki">
+                                <div class="is-card">
+                                    <div class="card-image-top">
+                                        <img src="assets/img/Wiki.png" class="wiki-logo">
+                                    </div>
+                                    <div class="card-content">
+                                        <h1 class="card-content--heading">
+                                            Wiki
+                                        </h1>
+                                        <p class="card-content--content">
+                                            For more in-depth information please use our wiki. You can also find approved decisions for the project.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex--grid--cell" data-link="discourse">
+                            <a href="https://forum.codidact.org/">
+                                <div class="is-card">
+                                    <div class="card-image-top">
+                                        <img src="assets/img/discourse-logo.png" class="discourse-logo">
+                                    </div>
+                                    <div class="card-content">
+                                        <h1 class="card-content--heading">
+                                            Forum
+                                        </h1>
+                                        <p class="card-content--content">
+                                            Most of our planning and decision-making happens on our Discourse forum server. Come join us!
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex--grid--cell" data-link="discord">
+                            <a href="https://discord.gg/7jf8UzS">
+                                <div class="is-card">
+                                    <div class="card-image-top">
+                                        <img src="assets/img/discord-logo.svg" class="discord-logo">
+                                    </div>
+                                    <div class="card-content">
+                                        <h1 class="card-content--heading">
+                                            Chat
+                                        </h1>
+                                        <p class="card-content--content">
+                                            For more real-time discussion and day-to-day chatter, we have a Discord server. Feel free to hop in!
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="nested-section--last">
+                    <div class="is-mailling-list-form">
+                        <p class="centered--short has-medium-large-font-size has-top-margin has-white-color">
+                            Join our mailling list
+                        </p>
+                        <div class="has-padding-medium is-flex-center">
+                            <form class="js-form">
+                                <input type="email" class="js-email-input" name="mail-input">
+                                <p class="has-red-color js-error"></p>
+                                <div class="loader">
+                                    <div class="bar"></div>
+                                </div>
+                                <button class="has-top-small-margin js-submit-button">Subscribe</button>
+                            </form>
+                            <div class="has-top-margin">
+                                <img class="pitch--image mail-box has-left-margin" src="assets/img/mail.svg">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <footer class="footer is-full-width">
+            <img src="assets/img/codidact-logo-white.svg" class="footer--logo" alt="Codidact logo" width="170" />
+            <p class="has-white-color">The open source Q&A platform.</p>
+        </footer>
     </body>
 </html>
