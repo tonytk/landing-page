@@ -79,7 +79,7 @@ if (isset($_POST["mail_input"])) {
         /*
             Email is not valid. Return to the page.
          */
-        $responseString = "please enter a email";
+        $responseString = "Please enter a valid email";
     }
     echo $responseString;
 } else {
